@@ -1,1 +1,1 @@
-# my-BRAND
+readme file for my-brand project
