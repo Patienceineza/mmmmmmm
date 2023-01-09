@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0%;
+    color:white;
+    font-family: sans-serif;
+}
+body{
+    background-color: #000;
+    color: #000;
+    height: auto;
+}
+header{
+    background:black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    contain: content;
+
+}
+
+main{
+    display: block;
+    justify-content: center;
+    background: url("./photos/pexels-jessica-lewis-creative-583848.jpg")no-repeat;
+    background-size: cover;
+    min-height: calc(100vh - 90px);
+}
+img{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 45px;
+    height:45px ;
+    border-radius: 50px;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color:#FFA500;
+    align-items: center;
+  }
+ul li a {
+    color: #FFA500;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    transition: 0.9s;
+} 
+ul li a:hover {
+    font-size: large;
+}
+ li{
+  list-style: none;
+  font-weight: bold;
+  font: size 32px; 
+  font-style: normal;
+}
+.signup{
+        padding :10px 10px;
+        height: 50px;
+        
+        
+    }
+.signup h2{
+        text-align: center;
+        align-items: center;
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+
+.form-div{ 
+   display: flex;
+   justify-content: center;
+   justify-self: center;
+}
+form{
+    margin-top:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 30px 30px;
+    font-size: 15px;
+    font-family: sans-serif;
+    width: 400px;
+    align-self: center;
+    box-shadow: 16px -7px 14px 1px rgba(13,4,4,0.68);
+    -webkit-box-shadow: 16px -7px 14px 1px rgba(13,4,4,0.68);
+    -moz-box-shadow: 16px -7px 14px 1px rgba(13,4,4,0.68);
+}
+input{
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 8px;
+    width: calc(100%-16px);
+    height: 30px;
+    border: none;
+    outline: none;
+    justify-items: center;
+
+ }
+ 
+form p{
+    font-size:20px ;
+} 
+ 
+ ::placeholder
+ {
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+   color: #615c5c;
+ }
+ form button {
+    margin-top: 20px;
+    height: 35px;
+    width: 50%;
+    align-self: center;
+    color: #FFA500;
+    background: #000000;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    transition: 0.9s;
+}
+form button:hover{
+    
+   font-size:18px ;
+   align-self: center;
+   background: #FFA500;
+   color: #000000;
+  
+   transition: 0.9s;
+}
+
+form button a:hover{
+    color: #000;
+}
+a{
+    text-decoration: none;
+    color: #FFA500;
+}
+p{
+    color: black;
+    font-size:20px;
+}
+
+.p b{
+    font-size: 16px;
+    color: #000;
+}
+footer{
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height:30px;
+    color: white;
+    margin-top: auto;
+  
+ }
+ @media only screen  and (max-width :570px) {
+    ul li a{
+        visibility: hidden;
+    }
+    form{
+        width: 250px;
+        
+    }
+    h2{
+        font-size: 20px;
+    }
+    footer{
+        font-size: 10px;
+    }
+}  
+@media only screen  and (max-width :570px)
+{
+    form{
+        width:200px;
+    }
+}*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+background: url("blogbg.jpg")no-repeat;
+    background-size: cover;
+    background-color: #000;
+
+
+  }
+  
+ nav{
+  display: grid;
+    background: #000000;
+    height: 80px;
+    width: 100%;
+   grid-template-columns: 1fr 1fr;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    
+    margin-right: 20px;
+  }
+  nav ul li{
+   
+    width: 20%;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color:#FFA500;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: capitalize;
+  }
+  a.active,a:hover{
+    background: #576168;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 1250px){
+    nav ul li {
+      font-size: 14px;
+      width: 35%;
+      line-height:15px;
+      margin: 0 0px;
+    }
+
+  }
+  @media (max-width: 1025px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav{
+        display:block;
+    
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 1024px){
+    .checkbtn{
+      display: flex;
+      flex-direction: row;
+
+    }
+    ul{
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      width: 40%;
+      height: 80vh;
+      background: #808385;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      margin-left:60%;
+    }
+    nav ul li{
+   
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #000000;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  
+
+
+    
+
+
+ 
+
+  
