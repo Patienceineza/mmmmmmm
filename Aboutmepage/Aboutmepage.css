@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0%;
+
+    
+    
+   
+}
+body{
+    background-color:black;
+    color: white;
+}
+header{
+    background:black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+img{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 45px;
+    height:45px ;
+    border-radius: 50px;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color:#FFA500;
+    align-items: center;
+  }
+ul li a {
+    color: #FFA500;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    transition: 0.9s;
+} 
+ul li a:hover {
+    font-size: large;
+}
+ li{
+  list-style: none;
+  font-weight: bold;
+  font: size 28px; 
+  font-style: normal;
+ }
+ main{
+    Display:block;
+    flex-direction: column;
+
+    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
+    background-size: cover;
+    min-height: calc(100vh - 90px);
+}
+ .beginning{
+    padding :10px 10px;
+    height: 50px;
+    
+    
+}
+.beginning h2{
+    text-align: center;
+    align-items: center;
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 36px;
+}
+.mainitems{
+    
+    float: left;
+    padding-left: 100px;
+    width: 35%;
+   padding-top: 50px;
+    font-size: 20px;
+    font-family: sans-serif;
+    height:500px;
+    
+    
+}
+.contacts{
+    float: right;
+    width: 35%;
+    padding-top: 50px;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-right: 50px;
+    
+}
+
+footer{
+    position:fixed;
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height:30px;
+    color: white;
+    justify-self: center;
+    left:40%;
+    align-self: center;
+ }
+ @media only screen  and (max-width :684px) {
+     
+    footer{
+        left:30%;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacts{
+        padding-top: 10px;
+        width: 100%;
+        margin-left: 10px;
+    }
+    .mainitems{
+        width: 100%;
+     padding-left: 10px;
+    }
+} 
+@media only screen  and (max-width :684px) {
+    ul li a{
+        visibility: hidden;
+    }
+}
+
+
+ nav{
+  display: grid;
+    background: #000000;
+    height: 80px;
+    width: 100%;
+   grid-template-columns: 1fr 1fr;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    
+    margin-right: 20px;
+  }
+  nav ul li{
+   
+    width: 20%;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color:#FFA500;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: capitalize;
+  }
+  a.active,a:hover{
+    background: #576168;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 1250px){
+    nav ul li {
+      font-size: 14px;
+      width: 35%;
+      line-height:15px;
+      margin: 0 0px;
+    }
+
+  }
+  @media (max-width: 1025px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav{
+        display:block;
+    
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 1024px){
+    .checkbtn{
+      display: flex;
+      flex-direction: row;
+
+    }
+    ul{
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      width: 40%;
+      height: 80vh;
+      background: #808385;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      margin-left:60%;
+    }
+    nav ul li{
+   
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #000000;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  
+
+
+    
+
+
+ 
+
+  
