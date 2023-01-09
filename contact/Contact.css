@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+  }
+  main{min-height: 100vh;
+    width: 100%;
+    background: #c8e8e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./photos/pexels-jessica-lewis-creative-583848.jpg");
+    background-size: cover;
+    
+  }
+  header{
+    background:black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+img{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 45px;
+    height:45px ;
+    border-radius: 50px;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color:#FFA500;
+    align-items: center;
+  }
+ul li a {
+    color: #FFA500;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    transition: 0.9s;
+} 
+ul li a:hover {
+    font-size: large;
+}
+ li{
+  list-style: none;
+  font-weight: bold;
+  font: size 32px; 
+  font-style: normal;
+ }
+  .container{
+    width: 70%;
+    background:rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container .content .left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+  }
+  .content .left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: black;
+  }
+  .content .left-side .details{
+    margin: 14px;
+    text-align: center;
+  }
+  .content .left-side .details i{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 10px;
+  }
+  .content .left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .content .left-side .details .text-one,
+  .content .left-side .details .text-two{
+    font-size: 14px;
+  }
+  .container .content .right-side{
+    width: 75%;
+    margin-left: 75px;
+  }
+  .content .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color:black;
+  }
+  .right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+  }
+  .right-side .input-box input,
+  .right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+  }
+  .right-side .message-box{
+    min-height: 110px;
+  }
+  .right-side .input-box textarea{
+    padding-top: 6px;
+  }
+  .right-side .button{
+    display: inline-block;
+    margin-top: 12px;
+  }
+  .right-side .button input[type="button"]{
+    color:#FFA500;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .button input[type="button"]:hover{
+    background:#FFA500;
+    color: black;
+  }
+  footer{
+    position: relative;
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height:30px;
+    color: white;
+    
+ }
+  
+  @media (max-width: 950px) {
+    .container{
+      width: 90%;
+      padding: 30px 40px 40px 35px ;
+    }
+    .container .content .right-side{
+     width: 75%;
+     margin-left: 55px;
+  }
+  }
+  @media (max-width: 820px) {
+    .container{
+      margin: 40px 0;
+      height: 100%;
+    }
+    .container .content{
+      flex-direction: column-reverse;
+    }
+   .container .content .left-side{
+     width: 100%;
+     flex-direction: row;
+     margin-top: 40px;
+     justify-content: center;
+     flex-wrap: wrap;
+   }
+   .container .content .left-side::before{
+     display: none;
+   }
+   .container .content .right-side{
+     width: 100%;
+     margin-left: 0;
+   }
+  }
+
+  *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+
+    /*-----------------navbar----------------------*/
+
+   
+ nav{
+  display: grid;
+    background: #000000;
+    height: 80px;
+    width: 100%;
+   grid-template-columns: 1fr 1fr;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    
+    margin-right: 20px;
+  }
+  nav ul li{
+   
+    width: 20%;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color:#FFA500;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: capitalize;
+  }
+  a.active,a:hover{
+    background: #576168;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 1250px){
+    nav ul li {
+      font-size: 14px;
+      width: 35%;
+      line-height:15px;
+      margin: 0 0px;
+    }
+
+  }
+  @media (max-width: 1025px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav{
+        display:block;
+    
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 1024px){
+    .checkbtn{
+      display: flex;
+      flex-direction: row;
+
+    }
+    ul{
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      width: 40%;
+      height: 80vh;
+      background: #808385;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      margin-left:60%;
+    }
+    nav ul li{
+   
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #000000;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  
+
+
+    
+
+
+ 
+
+  
